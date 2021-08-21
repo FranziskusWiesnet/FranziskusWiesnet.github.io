@@ -3,9 +3,6 @@ html, body, div, p, li {
     font-size: 16px;
     font-weight: 400;
 }
-body {
-  width: 270mm;
-}
 
 h1 {
   border-bottom: 2px solid black;
