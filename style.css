@@ -1,3 +1,7 @@
 body {
   width: 270mm;
 }
+
+h1 {
+  border: 1px solid;
+}
