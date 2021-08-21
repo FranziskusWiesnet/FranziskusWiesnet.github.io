@@ -1,15 +1,1 @@
-<h1>
-Franziskus Wiesnet
-<span style="text-align: center; font-weight: normal; float: right;">
-  <a class="current" href="index.html">Home</a> &#9900;
-  <a href="publications.html">Papers</a> &#9900;
-  <a href="talks.html">Talks</a> &#9900;
-  <a href="teaching.html">Teaching</a> &#9900;
-  <a href="cv.html">CV</a>
-  </span>
-</h1>
 
- <img style="float: left; margin: 0 10px 10px 0;" alt="me" src="me.jpg" width="200" height="280" border=1 />
- <p>
-  I am a researcher in the <a href="https://informatics.tuwien.ac.at/">Department of Informatics</a> at the Vienna University of Technology.
-  </p>
