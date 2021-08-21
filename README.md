@@ -9,4 +9,4 @@ Franziskus Wiesnet
   </span>
 </h1>
 
- <img style="float: left; margin: 0 10px 10px 0;" alt="me" src="me.jpg" width="123.24" height="180" border=1 />
+ <img style="float: left; margin: 0 10px 10px 0;" alt="me" src="me.jpg" width="125" height="175" border=1 />
