@@ -5,6 +5,10 @@ html, body, div, p, li {
     width: 270mm;
 }
 
+# bild {
+    hight: 210mm;
+}
+
 h1 {
   border-bottom: 2px solid black;
   margin: 10pt 0 15pt;
