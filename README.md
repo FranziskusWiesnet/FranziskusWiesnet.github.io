@@ -10,3 +10,6 @@ Franziskus Wiesnet
 </h1>
 
  <img style="float: left; margin: 0 10px 10px 0;" alt="me" src="me.jpg" width="125" height="175" border=1 />
+ <p>
+  I am a researcher in the <a href="https://informatics.tuwien.ac.at/">Department of Informatics</a> at the Vienna University of Technology.
+  </p>
