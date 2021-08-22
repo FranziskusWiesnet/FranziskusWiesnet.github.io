@@ -4,6 +4,8 @@ html, body, div, p, li {
     font-weight: 400;
     width: 270mm;
     text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #bild {
