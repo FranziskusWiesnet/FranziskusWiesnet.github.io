@@ -17,3 +17,7 @@ h2{
   border-bottom: 1px solid black;
   margin: 10pt 0 15pt;
 }
+
+a {
+text-decoration: none;
+}
