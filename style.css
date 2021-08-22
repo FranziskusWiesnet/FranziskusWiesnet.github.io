@@ -4,8 +4,14 @@ html, body, div, p, li {
     font-weight: 400;
     width: 270mm;
     text-align: justify;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+#contents {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 750px;
+    opacity: 1;
 }
 
 #bild {
