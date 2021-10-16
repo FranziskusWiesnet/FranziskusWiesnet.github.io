@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+  color: #006599;
+}
+h2{
+  padding-left: 1rem;
+  font-weight: 100;
+  font-weight: bold;
+}
+.grid-container
+{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+.navigation
+{
+  background-color: #006599;
+  grid-column: 1;
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head
+{
+  grid-row: 1;
+  text-align: center;
+  padding-left: 0;
+  padding-top: 40px;
+}
+.free
+{
+  grid-row: 2;
+}
+.home
+{
+  grid-row: 3;
+}
+.news
+{
+  grid-row: 4;
+}
+.research
+{
+  grid-row: 5;
+}
+.pub
+{
+  grid-row: 6;
+}
+.conf
+{grid-row: 7;}
+.hobbys
+{
+  grid-row: 8;
+}
+.contact
+{
+  grid-row: 9;
+}
+.main
+{ 
+  background-color: white;
+  grid-column 2;
+  grid-row-start: 1;
+  grid-row-end: 20;
+  padding:  1rem 5% 100px 5%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+p{
+  text-align: justify;
+}
+a.nav-link:any-link
+{
+  color: white;
+  text-decoration: none;
+}
+a.nav-link:hover, a.nav-link:active
+{
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+}
+.svg-inline--fa
+{
+  height: 1rem;
+}
+a.pdf:any-link
+{
+  color: rgb(190, 0, 0);
+  text-decoration: none;
+}
+a.pdf:hover, a.pdf:active
+{
+  text-decoration: underline;
+}
+p.cite{
+  padding-left: 2rem;
+}
+li.cite{
+  padding-left: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+a.extern:any-link
+{
+  color: #006599;
+  text-decoration: none;
+}
+a.extern:hover, a.extern:active
+{
+  color: #006599;
+  text-decoration: underline;
+}
+iframe
+{
+  display:block;
+}
+.talk{
+  padding-left: 0.5rem;
+  padding-bottom: 0.2rem;
+}
