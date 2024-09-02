@@ -21,20 +21,20 @@ h2{
   padding: 10px; /* Optional: Polsterung */
 }
 
-/* Anpassungen für größere Bildschirme */
+/* Anpassungen für größere Bildschirme 
 @media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: 200px 1fr; /* Eine schmalere feste Spalte und eine flexible Spalte */
+    grid-template-columns: 200px 1fr; 
   }
 }
 
 @media (min-width: 1024px) {
   .grid-container {
-    grid-template-columns: 300px 1fr; /* Eine breitere feste Spalte und eine flexible Spalte */
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; /* Reihen wie vorher festlegen */
-    height: 100vh; /* Feste Höhe nur auf großen Bildschirmen */
+    grid-template-columns: 300px 1fr; /
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; 
+    height: 100vh; 
   }
-}
+} */
 
 .navigation
 {
