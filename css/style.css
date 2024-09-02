@@ -38,6 +38,13 @@ body {
     font-size: 1.2em;
 }
 
+.navigation svg {
+    width: 24px; /* Größe der Symbole */
+    height: 24px;
+    margin-right: 5px;
+    fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
+}
+
 .nav-text {
     display: none; /* Text wird standardmäßig versteckt */
 }
