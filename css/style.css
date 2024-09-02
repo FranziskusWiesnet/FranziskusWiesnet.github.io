@@ -65,8 +65,8 @@ main {
     padding: 20px;
 }
 svg {
-    width: 24px; /* Größe der Symbole */
-    height: 24px;
+    width: 16px; /* Größe der Symbole */
+    height: 16px;
     margin-right: 5px;
     fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
 }
