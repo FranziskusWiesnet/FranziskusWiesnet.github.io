@@ -30,13 +30,16 @@ body {
 }
 
 .navigation li {
-    flex-shrink: 1;
+    flex: 1 1 0;
     text-align: center;
 }
 
 .navigation a {
     color: #fff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     font-size: 1.2em;
 }
 
@@ -47,6 +50,8 @@ body {
     max-width: 100%;
     fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
     flex-shrink: 1;
+    flex: 1 1 auto;
+    min-width: 16px;
 }
 
 .nav-text {
@@ -58,7 +63,7 @@ main {
     padding-top: 60px; /* Platz für die fixe obere Navigation */
     padding: 20px;
 }
-.main svg {
+svg {
     width: 24px; /* Größe der Symbole */
     height: 24px;
     margin-right: 5px;
