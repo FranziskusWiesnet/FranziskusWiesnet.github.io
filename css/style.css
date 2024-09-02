@@ -46,8 +46,9 @@ body {
 .navigation svg {
     max-width: 100%; /* Maximale Breite begrenzen */
     height: auto; /* Höhe proportional zur Breite */
+    margin-right: 5px;
     fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
-    flex: 1; /* Erlaubt den SVGs, sich proportional zu vergrößern oder zu verkleinern */
+    flex: 1 1 auto; /* Erlaubt den SVGs, sich proportional zu vergrößern oder zu verkleinern */
     min-width: 10px; /* Minimale Größe der Symbole, um Lesbarkeit zu gewährleisten */
     max-width: 24px; /* Maximale Größe der Symbole */
 }
