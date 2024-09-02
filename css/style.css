@@ -5,6 +5,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+.main svg {
+    width: 24px; /* Größe der Symbole */
+    height: 24px;
+    margin-right: 5px;
+    fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
+}
 
 .navigation {
     background-color: #006599;
