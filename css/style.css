@@ -10,14 +10,32 @@ h2{
   font-weight: 100;
   font-weight: bold;
 }
-.grid-container
-{
-  width: 100vw;
-  height: 100vh;
+
+.grid-container {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr; /* Eine Spalte auf kleinen Bildschirmen */
+  grid-template-rows: auto; /* Dynamische Höhen für Reihen */
+  width: 100vw;
+  height: auto; /* Höhe wird dynamisch je nach Inhalt angepasst */
+  gap: 10px; /* Optional: Abstand zwischen Grid-Elementen */
+  padding: 10px; /* Optional: Polsterung */
 }
+
+/* Anpassungen für größere Bildschirme */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 200px 1fr; /* Eine schmalere feste Spalte und eine flexible Spalte */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 300px 1fr; /* Eine breitere feste Spalte und eine flexible Spalte */
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; /* Reihen wie vorher festlegen */
+    height: 100vh; /* Feste Höhe nur auf großen Bildschirmen */
+  }
+}
+
 .navigation
 {
   background-color: #006599;
