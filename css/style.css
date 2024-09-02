@@ -1,146 +1,89 @@
 body {
-  margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-h1{
-  color: #006599;
-}
-h2{
-  padding-left: 1rem;
-  font-weight: 100;
-  font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Eine Spalte auf kleinen Bildschirmen */
-  grid-template-rows: auto; /* Dynamische Höhen für Reihen */
-  width: 100vw;
-  height: auto; /* Höhe wird dynamisch je nach Inhalt angepasst */
-  gap: 10px; /* Optional: Abstand zwischen Grid-Elementen */
-  padding: 10px; /* Optional: Polsterung */
+.navigation {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Anpassungen für größere Bildschirme */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navigation li {
+    text-align: center;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-text {
+    display: none; /* Text wird standardmäßig versteckt */
+}
+
+/* Hauptinhalt */
+main {
+    padding-top: 60px; /* Platz für die fixe obere Navigation */
+    padding: 20px;
+}
+
+/* Stile für größere Bildschirme */
 @media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: 200px 1fr; /* Eine schmalere feste Spalte und eine flexible Spalte */
-  }
-}
+    body {
+        flex-direction: row;
+    }
 
-@media (min-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 300px 1fr; /* Eine breitere feste Spalte und eine flexible Spalte */
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; /* Reihen wie vorher festlegen */
-    height: 100vh; /* Feste Höhe nur auf großen Bildschirmen */
-  }
-}
+    .navigation {
+        flex-direction: column; /* Navigation wird vertikal angeordnet */
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        padding-top: 20px;
+    }
 
-.navigation
-{
-  background-color: #006599;
-  grid-column: 1;
-  color: white;
-  font-size: 1.5rem;
-  text-align: left;
-  padding-left: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.head
-{
-  grid-row: 1;
-  text-align: center;
-  padding-left: 0;
-  padding-top: 40px;
-}
-.free
-{
-  grid-row: 2;
-}
-.home
-{
-  grid-row: 3;
-}
-.news
-{
-  grid-row: 4;
-}
-.research
-{
-  grid-row: 5;
-}
-.pub
-{
-  grid-row: 6;
-}
-.conf
-{grid-row: 7;}
-.hobbys
-{
-  grid-row: 8;
-}
-.contact
-{
-  grid-row: 9;
-}
-.main
-{ 
-  background-color: white;
-  grid-column 2;
-  grid-row-start: 1;
-  grid-row-end: 20;
-  padding:  1rem 5% 100px 5%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-p{
-  text-align: justify;
-}
-a.nav-link:any-link
-{
-  color: white;
-  text-decoration: none;
-}
-a.nav-link:hover, a.nav-link:active
-{
-  color: rgb(255, 255, 0);
-  text-decoration: none;
-}
-.svg-inline--fa
-{
-  height: 1rem;
-}
-a.pdf:any-link
-{
-  color: rgb(190, 0, 0);
-  text-decoration: none;
-}
-a.pdf:hover, a.pdf:active
-{
-  text-decoration: underline;
-}
-p.cite{
-  padding-left: 2rem;
-}
-li.cite{
-  padding-left: 0.5rem;
-  padding-bottom: 0.2rem;
-}
-a.extern:any-link
-{
-  color: #006599;
-  text-decoration: none;
-}
-a.extern:hover, a.extern:active
-{
-  color: #006599;
-  text-decoration: underline;
-}
-iframe
-{
-  display:block;
-}
-.talk{
-  padding-left: 0.5rem;
-  padding-bottom: 0.2rem;
+    .navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation li {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-text {
+        display: inline; /* Text neben den Symbolen anzeigen */
+        margin-left: 10px;
+    }
+
+    main {
+        margin-left: 200px; /* Platz für die linke Navigation */
+        padding: 20px;
+    }
 }
