@@ -48,14 +48,14 @@ main {
     padding: 20px;
 }
 
-/* Stile für größere Bildschirme */
+/* Stile für größere Bildschirme 
 @media (min-width: 768px) {
     body {
         flex-direction: row;
     }
 
     .navigation {
-        flex-direction: column; /* Navigation wird vertikal angeordnet */
+        flex-direction: column; 
         width: 200px;
         height: 100vh;
         position: fixed;
@@ -78,12 +78,12 @@ main {
     }
 
     .nav-text {
-        display: inline; /* Text neben den Symbolen anzeigen */
+        display: inline; 
         margin-left: 10px;
     }
 
     main {
-        margin-left: 200px; /* Platz für die linke Navigation */
+        margin-left: 200px; 
         padding: 20px;
     }
-}
+} */
