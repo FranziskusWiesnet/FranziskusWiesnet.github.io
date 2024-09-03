@@ -6,6 +6,12 @@ body {
     flex-direction: column;
 }
 
+svg {
+    width: 16px; /* Größe der Symbole */
+    height: 16px;
+    margin-right: 5px;
+    fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
+}
 
 .navigation {
     background-color: #006599;
@@ -63,12 +69,6 @@ body {
 main {
     padding-top: 60px; /* Platz für die fixe obere Navigation */
     padding: 20px;
-}
-svg {
-    width: 16px; /* Größe der Symbole */
-    height: 16px;
-    margin-right: 5px;
-    fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
 }
 
 /* Stile für größere Bildschirme 
