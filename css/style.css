@@ -7,10 +7,10 @@ body {
 }
 
 svg {
-    width: 16px; /* Größe der Symbole */
-    height: 16px;
-    margin-right: 5px;
-    fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
+    width: 12px;
+    height: 12px;
+    margin-right: 0;
+    fill: currentColor;
 }
 
 .navigation {
@@ -19,94 +19,111 @@ svg {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 5px 0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 }
-
+.navigation img{
+    display: none;
+}
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 .navigation li {
     display: flex;
+    flex-grow: 1;
     justify-content: center;
-    align-items: center;
-    flex-grow: 1; /* Elemente wachsen gleichmäßig */
+    /* align-items: center;*/
 }
 
 .navigation a {
     color: #fff;
     text-decoration: none;
     display: flex;
-    align-items: center;
     padding: 5px;
     font-size: 1.2em;
 }
 
+
 .navigation svg {
     max-width: 100%; /* Maximale Breite begrenzen */
     height: auto; /* Höhe proportional zur Breite */
-    margin-right: 5px;
     fill: currentColor; /* SVG-Farbe übernimmt die Textfarbe */
     flex: 1 1 auto; /* Erlaubt den SVGs, sich proportional zu vergrößern oder zu verkleinern */
-    min-width: 10px; /* Minimale Größe der Symbole, um Lesbarkeit zu gewährleisten */
-    max-width: 24px; /* Maximale Größe der Symbole */
+    min-width: 14px; /* Minimale Größe der Symbole, um Lesbarkeit zu gewährleisten */
 }
 
 .nav-text {
     display: none; /* Text wird standardmäßig versteckt */
 }
+.untertitel {
+    display: none; /* Text wird standardmäßig versteckt */
+}
 
 /* Hauptinhalt */
 main {
-    padding-top: 60px; /* Platz für die fixe obere Navigation */
-    padding: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* Stile für größere Bildschirme 
-@media (min-width: 768px) {
+@media(min-width: 768px) {
     body {
         flex-direction: row;
     }
-
     .navigation {
         flex-direction: column; 
         width: 200px;
         height: 100vh;
         position: fixed;
         padding-top: 20px;
+        
     }
-
     .navigation ul {
         flex-direction: column;
-        align-items: flex-start;
     }
-
     .navigation li {
-        width: 100%;
-        padding: 10px 20px;
+        padding: 7px 0px;
+        padding-left: 30px;
+        justify-content:left ;
     }
-
     .navigation a {
         display: flex;
-        align-items: center;
     }
-
     .nav-text {
         display: inline; 
         margin-left: 10px;
     }
-
     main {
         margin-left: 200px; 
         padding: 20px;
     }
-} */
+    @media(min-height: 700px) {
+        .navigation {
+            justify-content: flex-start;
+        }
+        .navigation img {
+            margin-left: 20px;
+            display: inline;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 160px;
+            text-align: center; 
+        }
+        .untertitel {
+            display: inline ;
+            margin-bottom: 30px;
+            text-align: center;
+            
+        }
+    }
+}
