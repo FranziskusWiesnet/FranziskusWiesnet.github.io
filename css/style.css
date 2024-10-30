@@ -52,7 +52,6 @@ svg {
     font-size: 1.2em;
 }
 
-
 .navigation svg {
     max-width: 100%; /* Maximale Breite begrenzen */
     height: auto; /* Höhe proportional zur Breite */
